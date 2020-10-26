@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>scripts</title>
+  <link rel="stylesheet" href="../dist/vux.css">
+  <script src="vue.min.1.0.24.js"></script>
+  <style>
+    #demo{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo">
+    <group>
+      <cell title="vue" value="cool"></cell>
+    </group>
+    <!-- 测试片段1 -->
+    <div>
+      这是旧版的测试内容哦
+    </div>
+    <!-- 新的测试片段2 -->
+    <div>
+      这是新的测试片段
+    </div>
+    <!-- 测试片段3 -->
+  </div>
+
+  <script src="../dist/components/group/index.js"></script>
+  <script src="../dist/components/cell/index.js"></script>
+
+  <script>
+  Vue.component('group', vuxGroup)
+  Vue.component('cell', vuxCell)
+  new Vue({
+    el: '#demo'
+  })
+  </script>
+</body>
+</html>

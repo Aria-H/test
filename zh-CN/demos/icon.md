@@ -46,7 +46,11 @@ nav: zh-CN
 </template>
 
 <script>
+<<<<<<< HEAD:zh-CN/demos/icon.md
 import { Box, Icon } from 'vux'
+=======
+import { Box, Icon } from '../components'
+>>>>>>> master:src/demos/Icon.vue
 
 export default {
   components: {
@@ -55,8 +59,11 @@ export default {
   }
 }
 </script>
+<<<<<<< HEAD:zh-CN/demos/icon.md
 
 ```
 #### 文档
 
 #### Github Issue
+=======
+>>>>>>> master:src/demos/Icon.vue
